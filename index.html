@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META | Folosite de browser si motoarele de cautare -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Mai întâi normalizarea -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <!-- Apoi stilurile -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- TITLE | Acest text o sa aparata in bara de sus a browserului (TAB) -->
+    <title>Web Studio Homework Project</title>
+  </head>
+  <!-- BODY | este partea pe care o vedem noi intr-o pagina web -->
+  <body>
+    <!-- HEADER | Partea de sus a unui site -->
+    <header class="global-header section">
+      <div class="container global-container">
+        <div class="logo-container">
+          <a href="index.html" class="logo"><span class="web">Web</span>Studio</a>
+        </div>
+        <div class="super-nav-class">
+          <nav class="main-navigation">
+            <!-- Sectiunea nav, contine doar link-urile pentru navigatie -->
+            <!-- Vom adauga valoare pentru href atunci cand avem create si restul paginilor  -->
+            <!-- Link spre pagina acasa -->
+            <a href="./index.html" class="nav-active-bar">Studio</a>
+            <a href="portfolio.html" class="nav-active-bar">Portfolio</a>
+            <a href="Contacts" class="nav-active-bar">Contacts</a>
+          </nav>
+          <ul class="contact">
+            <li>
+              <a href="info@devstudio.com" class="mail"
+                ><svg><use href="./images/symbol-defs.svg#icon-mail"></use></svg>info@devstudio.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+12127724150" class="phone-number"
+                ><svg><use href="./images/symbol-defs.svg#icon-smartphone"></use></svg>+1
+                212-772-4150</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- MAIN SECTION | Partea principala a site-ului nostru-->
+    <main>
+      <!-- FIRST SECTION | Contine titlul -->
+      <section class="first-section section">
+        <div class="container">
+          <h1>
+            EFFECTIVE SOLUTIONS FOR <br />
+            YOUR BUSINESS
+          </h1>
+          <button type="button" data-modal-open class="request-button">Request our service</button>
+        </div>
+      </section>
+      <!-- SECOND SECTION | Contine cele mai importante calitati regasite in cadrul studioului -->
+      <section class="second-section section">
+        <div class="container second-section-flex">
+          <div>
+            <div class="second-section-items-container">
+              <svg width="70px" height="70px">
+                <use href="./images/symbol-defs.svg#icon-antenna"></use>
+              </svg>
+            </div>
+            <p>ATTENTION TO DETAILS</p>
+            <span>
+              We go into all the details and processes <br />
+              of your business to develop a <br />
+              customized solution.
+            </span>
+          </div>
+          <div>
+            <div class="second-section-items-container">
+              <svg width="70px" height="70px">
+                <use href="./images/symbol-defs.svg#icon-clock"></use>
+              </svg>
+            </div>
+            <p>PUNCTUALITY</p>
+            <span>
+              With us, you can feel safe and secure. <br />
+              An important principle of the company: <br />
+              respect your time and deadlines.
+            </span>
+          </div>
+          <div>
+            <div class="second-section-items-container">
+              <svg width="70px" height="70px">
+                <use href="./images/symbol-defs.svg#icon-diagram"></use>
+              </svg>
+            </div>
+            <p>PLANNING</p>
+            <span>
+              You will be able to observe and <br />
+              participate in every phase of solution <br />
+              development and implementation.
+            </span>
+          </div>
+          <div>
+            <div class="second-section-items-container">
+              <svg width="70px" height="70px">
+                <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+              </svg>
+            </div>
+            <p>MODERN TECHNOLOGIES</p>
+            <span>
+              We use innovative tools to solve <br />
+              assigned tasks. It's time to simplify work <br />
+              processes.
+            </span>
+          </div>
+        </div>
+      </section>
+      <!-- THIRD SECTION | Cu ce se ocupa studioul -->
+      <section class="third-section section">
+        <div class="container">
+          <h2>What we do</h2>
+          <div class="third-section-flex">
+            <div class="thumb">
+              <img src="images\laptop.jpg" alt="Laptop apps" width="370px" height="294px" />
+              <p class="label">DESKTOP APPS</p>
+            </div>
+            <div class="thumb">
+              <img src="images\mobile.jpg" alt="Mobile apps" width="370px" height="294px" />
+              <p class="label">Mobile APPS</p>
+            </div>
+            <div class="thumb">
+              <img src="images\tableta.jpg" alt="Tablet apps" width="370px" height="294px" />
+              <p class="label">DESIGN SOLUTIONS</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FOURTH SECTION | Echipa -->
+      <section class="fourth-section section">
+        <div class="container fourth-section-flex">
+          <h2>Our Team</h2>
+          <ul class="ourteam-list">
+            <li>
+              <img src="images\Christopher.jpg" alt="Christopher Walker foto" width="270px" />
+              <div>
+                <p>Christopher Walker</p>
+                <em>Product Designer</em>
+                <div class="icons-list">
+                  <a href="https://instagram.com" class="icons" aria-label="Instagram">
+                    <svg>
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                  <a href="https://twitter.com" class="icons" aria-label="Twitter">
+                    <svg>
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                  <a href="https://facebook.com" class="icons" aria-label="Facebook">
+                    <svg>
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                  <a href="https://linkedin.com" class="icons" aria-label="LinkedIn">
+                    <svg>
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img src="images\Kylie.jpg" alt="Kylie Evans foto" width="270px" />
+              <div>
+                <p>Kylie Evans</p>
+                <em>Frontend Developer</em>
+                <div class="icons-list">
+                  <a href="https://instagram.com" class="icons" aria-label="Instagram">
+                    <svg>
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                  <a href="https://twitter.com" class="icons" aria-label="Twitter">
+                    <svg>
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                  <a href="https://facebook.com" class="icons" aria-label="Facebook">
+                    <svg>
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                  <a href="https://linkedin.com" class="icons" aria-label="LinkedIn">
+                    <svg>
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img src="images\Ryan.jpg" alt="Ryan Harris foto" width="270px" />
+              <div>
+                <p>Ryan Harris</p>
+                <em>Marketing</em>
+                <div class="icons-list">
+                  <a href="https://instagram.com" class="icons" aria-label="Instagram">
+                    <svg>
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                  <a href="https://twitter.com" class="icons" aria-label="Twitter">
+                    <svg>
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                  <a href="https://facebook.com" class="icons" aria-label="Facebook">
+                    <svg>
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                  <a href="https://linkedin.com" class="icons" aria-label="LinkedIn">
+                    <svg>
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <img src="images\Tyler.jpg" alt="Tyler Moore foto" width="270px" />
+              <div>
+                <p>Tyler Moore</p>
+                <em>UI Designer</em>
+                <div class="icons-list">
+                  <a href="https://instagram.com" class="icons" aria-label="Instagram">
+                    <svg>
+                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                  <a href="https://twitter.com" class="icons" aria-label="Twitter">
+                    <svg>
+                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                  <a href="https://facebook.com" class="icons" aria-label="Facebook">
+                    <svg>
+                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                  <a href="https://linkedin.com" class="icons" aria-label="LinkedIn">
+                    <svg>
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Fifth SECTION | Clienti fideli -->
+      <section class="section">
+        <div class="container">
+          <h2>Regular Customers</h2>
+          <div class="main-customers-container">
+            <div class="customers-container">
+              <svg>
+                <use href="./images/symbol-defs.svg#icon-Logo"></use>
+              </svg>
+            </div>
+            <div class="customers-container">
+              <svg>
+                <use href="./images/symbol-defs.svg#icon-logo1"></use>
+              </svg>
+            </div>
+            <div class="customers-container">
+              <svg>
+                <use href="./images/symbol-defs.svg#icon-logo2"></use>
+              </svg>
+            </div>
+            <div class="customers-container">
+              <svg>
+                <use href="./images/symbol-defs.svg#icon-logo3"></use>
+              </svg>
+            </div>
+            <div class="customers-container">
+              <svg>
+                <use href="./images/symbol-defs.svg#icon-logo4"></use>
+              </svg>
+            </div>
+            <div class="customers-container">
+              <svg>
+                <use href="./images/symbol-defs.svg#icon-logo5"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER | Partea de jos a unui site  -->
+    <footer class="global-footer section">
+      <div class="container footer-flex">
+        <div>
+          <a href="index.html" class="logo">Web<span class="studio">Studio</span></a>
+          <!-- ADDRESS | Adresa studioului -->
+          <address class="main-addres">
+            <p class="corection">695 Park Ave, NY 10065, USA</p>
+            <!-- INFO | Informatii contact -->
+            <div class="corection-link">
+              <a href="info@devstudio.com">info@devstudio.com</a>
+            </div>
+            <div class="corection-link">
+              <a href="tel:+12127724150" class="phone-number">+1 212-772-4150</a>
+            </div>
+          </address>
+        </div>
+        <div>
+          <p class="last-class">Find us on</p>
+          <div class="footer-icons-list">
+            <a href="https://instagram.com" class="footer-icons" aria-label="Instagram">
+              <svg>
+                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a href="https://twitter.com" class="footer-icons" aria-label="Twitter">
+              <svg>
+                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
+            <a href="https://facebook.com" class="footer-icons" aria-label="Facebook">
+              <svg>
+                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" class="footer-icons" aria-label="LinkedIn">
+              <svg>
+                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <form>
+            <label>Subscribe to the newsletter</label>
+            <input type="email" name="E-mail" placeholder="E-mail" required />
+            <button type="submit">
+              <span>Subscribe</span
+              ><svg><use href="./images/symbol-defs.svg#icon-send-form"></use></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <!-- MODAL -->
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-content">
+        <button class="close-btn" data-modal-close>&times;</button>
+        <div class="inside-content">
+          <h3>Leave your information and we'll call you back</h3>
+          <form name="signup_form" validate>
+            <label>
+              <span class="label-text">Name</span>
+              <input
+                class="input"
+                type="name"
+                name="name"
+                required
+                pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+              />
+              <svg class="label-icon">
+                <use href="./images/symbol-defs.svg#icon-name-form"></use>
+              </svg>
+            </label>
+            <label>
+              <span class="label-text">Telephone</span>
+              <input
+                class="input"
+                type="tel"
+                name="tel"
+                pattern="[0-9]{4} [0-9]{3} [0-9]{3}"
+                required
+              />
+              <svg class="label-icon">
+                <use href="./images/symbol-defs.svg#icon-tel-form"></use>
+              </svg>
+            </label>
+            <label>
+              <span class="label-text">E-mail</span>
+              <input class="input" type="email" name="email" required />
+              <svg class="label-icon">
+                <use href="./images/symbol-defs.svg#icon-email-form"></use>
+              </svg>
+            </label>
+            <label>
+              <span class="label-text">Comments</span>
+              <textarea
+                class="input"
+                name="Comments"
+                cols="30"
+                rows="4"
+                placeholder="Enter the text"
+              ></textarea>
+            </label>
+            <label class="checkbox-container">
+              <input class="check-box" type="checkbox" name="checkbox" required />
+              <i class="checkbox-icon">
+                <svg>
+                  <use href="./images/symbol-defs.svg#icon-check"></use>
+                </svg>
+              </i>
+              <span class="checkbox-text">I agree with the letter and accept the</span>
+              <a class="terms" href="Terms and Conditions">Terms and Conditions</a>
+            </label>
+            <div class="form-controls">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js" type="text/javascript"></script>
+  </body>
+</html>
