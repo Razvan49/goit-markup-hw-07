@@ -1,0 +1,133 @@
+/* GLOBAL HEADER */
+
+.global-container {
+  display: flex;
+  align-items: center;
+}
+
+.global-header {
+  padding: 24px 0;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.global-header a {
+  color: var(--link-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  position: relative;
+}
+
+.logo-container {
+  flex-basis: 238px;
+}
+.contact {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  color: var(--link-active-color);
+  outline: 0;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-active-bar {
+  position: relative;
+}
+
+.nav-active-bar:after {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background-color: var(--link-active-color);
+  top: 46px;
+  left: 0;
+  border-radius: 2px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-active-bar:hover::after,
+.nav-active-bar:focus::after {
+  opacity: 1;
+}
+
+.super-nav-class {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.global-header .logo {
+  font-family: Raleway, sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+  color: #000000;
+}
+.global-header .web {
+  color: #2196f3;
+}
+.global-header a.mail {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: var(--second-section-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.global-header a.mail:hover,
+.global-header a.mail:focus {
+  color: var(--link-active-color);
+  outline: 0;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.global-header a.phone-number {
+  position: relative;
+  display: flex;
+  color: var(--second-section-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  outline: 0;
+}
+
+.global-header a.phone-number:hover,
+.global-header a.phone-number:focus {
+  color: var(--link-active-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact .mail svg {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+.contact .phone-number svg {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
