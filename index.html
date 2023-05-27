@@ -298,50 +298,50 @@
     <!-- FOOTER | Partea de jos a unui site  -->
     <footer class="section global-footer">
       <div class="container footer-flex">
-        <div>
-          <a href="index.html" class="logo">Web<span class="studio">Studio</span></a>
+        <div class="nav">
+          <a class="nav__logo" href="index.html">Web<span class="nav__studio">Studio</span></a>
           <!-- ADDRESS | Adresa studioului -->
-          <address class="main-addres">
-            <p class="corection">695 Park Ave, NY 10065, USA</p>
+          <address class="address">
+            <p class="address__street">695 Park Ave, NY 10065, USA</p>
             <!-- INFO | Informatii contact -->
-            <div class="corection-link">
-              <a href="info@devstudio.com">info@devstudio.com</a>
+            <div class="address__container">
+              <a class="address__link" href="info@devstudio.com">info@devstudio.com</a>
             </div>
-            <div class="corection-link">
-              <a href="tel:+12127724150" class="phone-number">+1 212-772-4150</a>
+            <div class="address__container">
+              <a class="phone-number" href="tel:+12127724150">+1 212-772-4150</a>
             </div>
           </address>
         </div>
-        <div>
-          <p class="last-class">Find us on</p>
-          <div class="footer-icons-list">
-            <a href="https://instagram.com" class="footer-icons" aria-label="Instagram">
+        <div class="find">
+          <p class="find__title">Find us on</p>
+          <div class="find_container">
+            <a class="find__icons" href="https://instagram.com" aria-label="Instagram">
               <svg>
                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
               </svg>
             </a>
-            <a href="https://twitter.com" class="footer-icons" aria-label="Twitter">
+            <a class="find__icons" href="https://twitter.com" aria-label="Twitter">
               <svg>
                 <use href="./images/symbol-defs.svg#icon-twitter"></use>
               </svg>
             </a>
-            <a href="https://facebook.com" class="footer-icons" aria-label="Facebook">
+            <a class="find__icons" href="https://facebook.com" aria-label="Facebook">
               <svg>
                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
               </svg>
             </a>
-            <a href="https://linkedin.com" class="footer-icons" aria-label="LinkedIn">
+            <a class="find__icons" href="https://linkedin.com" aria-label="LinkedIn">
               <svg>
                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
               </svg>
             </a>
           </div>
         </div>
-        <div>
-          <form>
-            <label>Subscribe to the newsletter</label>
-            <input type="email" name="E-mail" placeholder="E-mail" required />
-            <button type="submit">
+        <div class="subscribe">
+          <form class="form">
+            <label class="form__title">Subscribe to the newsletter</label>
+            <input class="form__input" type="email" name="E-mail" placeholder="E-mail" required />
+            <button class="form__button" type="submit">
               <span>Subscribe</span
               ><svg><use href="./images/symbol-defs.svg#icon-send-form"></use></svg>
             </button>
@@ -351,15 +351,15 @@
     </footer>
     <!-- MODAL -->
     <div class="modal is-hidden" data-modal>
-      <div class="modal-content">
+      <div class="frame">
         <button class="close-btn" data-modal-close>&times;</button>
-        <div class="inside-content">
+        <div class="modal-content">
           <h3>Leave your information and we'll call you back</h3>
-          <form name="signup_form" validate>
-            <label>
-              <span class="label-text">Name</span>
+          <form name="forms" validate>
+            <label class="forms__label">
+              <span class="forms__title">Name</span>
               <input
-                class="input"
+                class="forms__input"
                 type="name"
                 name="name"
                 required
@@ -369,8 +369,8 @@
                 <use href="./images/symbol-defs.svg#icon-name-form"></use>
               </svg>
             </label>
-            <label>
-              <span class="label-text">Telephone</span>
+            <label class="forms__label">
+              <span class="forms__title">Telephone</span>
               <input
                 class="input"
                 type="tel"
@@ -382,15 +382,15 @@
                 <use href="./images/symbol-defs.svg#icon-tel-form"></use>
               </svg>
             </label>
-            <label>
-              <span class="label-text">E-mail</span>
+            <label class="forms__label">
+              <span class="forms__title">E-mail</span>
               <input class="input" type="email" name="email" required />
               <svg class="label-icon">
                 <use href="./images/symbol-defs.svg#icon-email-form"></use>
               </svg>
             </label>
-            <label>
-              <span class="label-text">Comments</span>
+            <label class="forms__label">
+              <span class="forms__title">Comments</span>
               <textarea
                 class="input"
                 name="Comments"
@@ -398,7 +398,7 @@
                 rows="4"
                 placeholder="Enter the text"
               ></textarea>
-            </label>
+            </label class="forms__label">
             <label class="checkbox-container">
               <input class="check-box" type="checkbox" name="checkbox" required />
               <i class="checkbox-icon">
