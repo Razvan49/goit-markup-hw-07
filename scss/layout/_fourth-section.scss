@@ -11,7 +11,7 @@
   margin: 0;
 }
 
-.fourth-section li {
+.ourteam__list {
   background: #ffffff;
   font-weight: 500;
   font-size: 16px;
@@ -23,53 +23,27 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.fourth-section p {
+.ourteam__info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.ourteam__name {
   padding-bottom: 10px;
   margin: 0;
 }
 
-.fourth-section li em {
+.ourteam__job {
   color: var(--second-section-color);
   font-weight: 400;
   font-size: 16px;
   font-style: normal;
 }
 
-ul li div {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-ul li p {
-  margin: 0;
-}
-/* Aici am introdus iconitele social media */
-
-.ourteam-list .icons-list .icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 44px;
-  width: 44px;
-  color: var(--social-icons--normal-color);
-  border-radius: 50%;
-}
-.icons-list .icons svg {
-  width: 20px;
-  height: 20px;
-}
-.icons-list {
+.ourteam__icons {
   display: flex;
   justify-content: center;
   gap: 10px;
   padding-top: 16px;
   padding-bottom: 0;
-}
-.ourteam-list .icons-list .icons:hover,
-.ourteam-list .icons-list .icons:focus {
-  color: var(--social-icons--hover-color);
-  background-color: var(--social-icons--background-color);
-  outline: 0;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

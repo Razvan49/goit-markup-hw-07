@@ -1,18 +1,19 @@
 /* THIRD SECTION */
 
+.third-section {
+  padding-top: 0;
+}
+
 .third-section-flex {
   display: flex;
   justify-content: space-between;
-}
-.third-section {
-  padding-top: 0;
 }
 
 .thumb {
   text-align: center;
   position: relative;
 }
-.label {
+.thumb__label {
   position: absolute;
   background: rgba(47, 48, 58, 0.8);
   width: 100%;

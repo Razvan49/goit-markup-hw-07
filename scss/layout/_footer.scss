@@ -1,15 +1,15 @@
 /* GLOBAL FOOTER */
 
+.global-footer {
+  background: var(--dark-gray-section-color);
+  padding: 0;
+}
+
 .footer-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 251px;
-}
-
-.global-footer {
-  background: var(--dark-gray-section-color);
-  padding: 0;
 }
 
 .global-footer a {
