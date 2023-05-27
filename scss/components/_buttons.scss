@@ -45,6 +45,7 @@
 
 // BUTTON MODAL
 
+// CLOSE BUTTON
 .close-btn {
   flex-direction: column;
   align-items: center;
@@ -67,5 +68,37 @@
   &:hover,
   &:focus {
     color: var(--link-active-color);
+  }
+}
+
+// SEND BUTTON
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.send-button {
+  display: inline;
+  background: var(--link-active-color);
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 2;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 0;
+
+  &:focus,
+  &:hover {
+    background: #1075c8;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }

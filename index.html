@@ -365,52 +365,52 @@
                 required
                 pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
               />
-              <svg class="label-icon">
+              <svg class="forms__icon">
                 <use href="./images/symbol-defs.svg#icon-name-form"></use>
               </svg>
             </label>
             <label class="forms__label">
               <span class="forms__title">Telephone</span>
               <input
-                class="input"
+                class="forms__input"
                 type="tel"
                 name="tel"
                 pattern="[0-9]{4} [0-9]{3} [0-9]{3}"
                 required
               />
-              <svg class="label-icon">
+              <svg class="forms__icon">
                 <use href="./images/symbol-defs.svg#icon-tel-form"></use>
               </svg>
             </label>
             <label class="forms__label">
               <span class="forms__title">E-mail</span>
-              <input class="input" type="email" name="email" required />
-              <svg class="label-icon">
+              <input class="forms__input" type="email" name="email" required />
+              <svg class="forms__icon">
                 <use href="./images/symbol-defs.svg#icon-email-form"></use>
               </svg>
             </label>
             <label class="forms__label">
               <span class="forms__title">Comments</span>
               <textarea
-                class="input"
+                class="forms__textarea"
                 name="Comments"
                 cols="30"
                 rows="4"
                 placeholder="Enter the text"
               ></textarea>
-            </label class="forms__label">
-            <label class="checkbox-container">
-              <input class="check-box" type="checkbox" name="checkbox" required />
-              <i class="checkbox-icon">
+            </label>
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" name="checkbox" required />
+              <i class="checkbox__icon">
                 <svg>
                   <use href="./images/symbol-defs.svg#icon-check"></use>
                 </svg>
               </i>
-              <span class="checkbox-text">I agree with the letter and accept the</span>
-              <a class="terms" href="Terms and Conditions">Terms and Conditions</a>
+              <span class="checkbox__text">I agree with the letter and accept the</span>
+              <a class="checkbox__terms" href="Terms and Conditions">Terms and Conditions</a>
             </label>
-            <div class="form-controls">
-              <button type="submit">Send</button>
+            <div class="button-container">
+              <button class="send-button" type="submit">Send</button>
             </div>
           </form>
         </div>

@@ -16,6 +16,11 @@
   transition: var(--transition);
 }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .frame {
   display: flex;
   position: relative;
@@ -24,15 +29,8 @@
   width: 528px;
   margin: 0 auto;
 }
-.modal-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 100%;
-  height: 100%;
-  padding: 40px;
-}
-.modal-content span {
+
+.forms__title {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -40,70 +38,108 @@
   color: var(--social-mail-icons--normal-color);
 }
 
-.modal-content form span:nth-child(2) {
-  font-size: 14px;
-}
-
-.modal-content form {
+.modal-content {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+
+  & svg {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 12px;
+    color: inherit;
+  }
 }
 
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.modal-content label {
+.forms__label {
   position: relative;
   display: flex;
   flex-direction: column;
   margin-top: 10px;
+
+  &:focus-within > .forms__icon {
+    color: var(--link-active-color);
+  }
 }
 
-.modal-content textarea {
+.checkbox {
+  cursor: pointer;
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+}
+.checkbox__terms {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #2196f3;
+  margin-left: 3px;
+}
+
+.checkbox__input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox__icon {
+  border: 2px solid black;
+  position: relative;
+  height: 16px;
+  width: 15px;
+  border-radius: 2px;
+
+  & svg {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 11px;
+    height: 8px;
+    display: none;
+  }
+}
+
+.checkbox__text {
+  margin-left: 7px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--second-section-color);
+}
+
+.checkbox__input[type="checkbox"]:checked ~ .checkbox__icon {
+  background: var(--link-active-color);
+  border: none;
+}
+
+/* Atunci cand input-ul ascuns este bifat, se aplica stilul pentru iconita */
+.checkbox__input[type="checkbox"]:checked ~ .checkbox__icon svg {
+  display: inline;
+}
+
+.modal-content .forms__textarea {
   outline: none;
   margin-top: 10px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  &:focus-within {
+    border: 1px solid #2196f3;
+  }
 }
 
-.modal-content label:nth-child(5) {
-  flex-direction: row;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.modal-content button {
-  display: inline;
-  background: var(--link-active-color);
-  color: #fff;
-  width: 200px;
-  height: 50px;
-  font-size: 16px;
-  line-height: 2;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  border: 0;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  padding: 0;
-}
-.form-controls {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-.modal-content button:focus,
-.modal-content button:hover {
-  background: #1075c8;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-content input {
+.forms__input {
   position: relative;
   padding-left: 40px;
   padding-bottom: 0;
@@ -114,74 +150,8 @@
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-}
-.modal-content .input:focus-within {
-  border: 1px solid #2196f3;
-}
 
-.modal-content svg {
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  top: 50%;
-  left: 12px;
-  color: inherit;
-}
-.modal-content label:focus-within > .label-icon {
-  color: var(--link-active-color);
-}
-
-.checkbox-container {
-  cursor: pointer;
-  width: fit-content;
-  justify-content: center;
-  margin: auto;
-}
-.checkbox-container .terms {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  text-decoration-line: underline;
-  color: #2196f3;
-  margin-left: 3px;
-}
-
-.checkbox-container input[type="checkbox"] {
-  display: none;
-}
-
-.checkbox-icon {
-  border: 2px solid black;
-  position: relative;
-  height: 16px;
-  width: 15px;
-  border-radius: 2px;
-}
-
-.checkbox-icon svg {
-  color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 11px;
-  height: 8px;
-  display: none;
-}
-.modal-content .checkbox-text {
-  margin-left: 7px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: var(--second-section-color);
-}
-.checkbox-container input[type="checkbox"]:checked ~ .checkbox-icon {
-  background: var(--link-active-color);
-  border: none;
-}
-
-/* Atunci cand input-ul ascuns este bifat, se aplica stilul pentru iconita */
-.checkbox-container input[type="checkbox"]:checked ~ .checkbox-icon svg {
-  display: inline;
+  &:focus-within {
+    border: 1px solid #2196f3;
+  }
 }
