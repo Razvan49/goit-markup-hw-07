@@ -13,28 +13,28 @@
   <!-- BODY | este partea pe care o vedem noi intr-o pagina web -->
   <body>
     <!-- HEADER | Partea de sus a unui site -->
-    <header class="global-header section">
-      <div class="container global-container">
-        <div class="logo-container">
-          <a href="index.html" class="logo"><span class="web">Web</span>Studio</a>
+    <header class="section global-header">
+      <div class="container container-header">
+        <div class="logo">
+          <a href="index.html" class="logo__link"><span class="logo__web">Web</span>Studio</a>
         </div>
-        <div class="super-nav-class">
-          <nav class="main-navigation">
+        <div class="container-nav">
+          <nav class="filter">
             <!-- Sectiunea nav, contine doar link-urile pentru navigatie -->
             <!-- Vom adauga valoare pentru href atunci cand avem create si restul paginilor  -->
             <!-- Link spre pagina acasa -->
-            <a href="./index.html" class="nav-active-bar">Studio</a>
-            <a href="portfolio.html" class="nav-active-bar">Portfolio</a>
-            <a href="Contacts" class="nav-active-bar">Contacts</a>
+            <a href="./index.html" class="filter__link">Studio</a>
+            <a href="portfolio.html" class="filter__link">Portfolio</a>
+            <a href="Contacts" class="filter__link">Contacts</a>
           </nav>
           <ul class="contact">
             <li>
-              <a href="info@devstudio.com" class="mail"
+              <a href="info@devstudio.com" class="contact__mail"
                 ><svg><use href="./images/symbol-defs.svg#icon-mail"></use></svg>info@devstudio.com
               </a>
             </li>
             <li>
-              <a href="tel:+12127724150" class="phone-number"
+              <a href="tel:+12127724150" class="contact__phone"
                 ><svg><use href="./images/symbol-defs.svg#icon-smartphone"></use></svg>+1
                 212-772-4150</a
               >
@@ -46,7 +46,7 @@
     <!-- MAIN SECTION | Partea principala a site-ului nostru-->
     <main>
       <!-- FIRST SECTION | Contine titlul -->
-      <section class="first-section section">
+      <section class="section first-section">
         <div class="container">
           <h1>
             EFFECTIVE SOLUTIONS FOR <br />
@@ -56,15 +56,15 @@
         </div>
       </section>
       <!-- SECOND SECTION | Contine cele mai importante calitati regasite in cadrul studioului -->
-      <section class="second-section section">
+      <section class="section second-section">
         <div class="container second-section-flex">
           <div>
-            <div class="second-section-items-container">
+            <div class="advantage">
               <svg width="70px" height="70px">
                 <use href="./images/symbol-defs.svg#icon-antenna"></use>
               </svg>
             </div>
-            <p>ATTENTION TO DETAILS</p>
+            <p class="advantage__title">ATTENTION TO DETAILS</p>
             <span>
               We go into all the details and processes <br />
               of your business to develop a <br />
@@ -72,12 +72,12 @@
             </span>
           </div>
           <div>
-            <div class="second-section-items-container">
+            <div class="advantage">
               <svg width="70px" height="70px">
                 <use href="./images/symbol-defs.svg#icon-clock"></use>
               </svg>
             </div>
-            <p>PUNCTUALITY</p>
+            <p class="advantage__title">PUNCTUALITY</p>
             <span>
               With us, you can feel safe and secure. <br />
               An important principle of the company: <br />
@@ -85,12 +85,12 @@
             </span>
           </div>
           <div>
-            <div class="second-section-items-container">
+            <div class="advantage">
               <svg width="70px" height="70px">
                 <use href="./images/symbol-defs.svg#icon-diagram"></use>
               </svg>
             </div>
-            <p>PLANNING</p>
+            <p class="advantage__title">PLANNING</p>
             <span>
               You will be able to observe and <br />
               participate in every phase of solution <br />
@@ -98,12 +98,12 @@
             </span>
           </div>
           <div>
-            <div class="second-section-items-container">
+            <div class="advantage">
               <svg width="70px" height="70px">
                 <use href="./images/symbol-defs.svg#icon-astronaut"></use>
               </svg>
             </div>
-            <p>MODERN TECHNOLOGIES</p>
+            <p class="advantage__title">MODERN TECHNOLOGIES</p>
             <span>
               We use innovative tools to solve <br />
               assigned tasks. It's time to simplify work <br />
@@ -113,7 +113,7 @@
         </div>
       </section>
       <!-- THIRD SECTION | Cu ce se ocupa studioul -->
-      <section class="third-section section">
+      <section class="section third-section">
         <div class="container">
           <h2>What we do</h2>
           <div class="third-section-flex">
@@ -133,7 +133,7 @@
         </div>
       </section>
       <!-- FOURTH SECTION | Echipa -->
-      <section class="fourth-section section">
+      <section class="section fourth-section">
         <div class="container fourth-section-flex">
           <h2>Our Team</h2>
           <ul class="ourteam-list">
@@ -296,7 +296,7 @@
       </section>
     </main>
     <!-- FOOTER | Partea de jos a unui site  -->
-    <footer class="global-footer section">
+    <footer class="section global-footer">
       <div class="container footer-flex">
         <div>
           <a href="index.html" class="logo">Web<span class="studio">Studio</span></a>
