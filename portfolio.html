@@ -5,9 +5,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Mai întâi normalizarea -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <!-- Apoi stilurile -->
     <link rel="stylesheet" href="./css/main.min.css" />
-    <!-- TITLE | Acest text o sa aparata in bara de sus a browserului (TAB) -->
+    <!-- TITLE | Acest portfolio__text o sa aparata in bara de sus a browserului (TAB) -->
     <title>Web Studio Homework Project</title>
   </head>
   <body>
@@ -51,167 +56,177 @@
         butonului All-->
         <section class="filter-buttons">
           <div class="container">
-            <ul class="filter-section-button filter-section-flex">
-              <li><button type="button" class="item">All</button></li>
-              <li><button type="button" class="item">Web-sites</button></li>
-              <li><button type="button" class="item">Apps</button></li>
-              <li><button type="button" class="item">Design</button></li>
-              <li><button type="button" class="item last">Marketing</button></li>
+            <ul class="filter-section-flex category">
+              <li class="category__list">
+                <button class="category__button" type="button">All</button>
+              </li>
+              <li class="category__list">
+                <button class="category__button" type="button">Web-sites</button>
+              </li>
+              <li class="category__list">
+                <button class="category__button" type="button">Apps</button>
+              </li>
+              <li class="category__list">
+                <button class="category__button" type="button">Design</button>
+              </li>
+              <li class="category__list">
+                <button class="category__button" type="button">Marketing</button>
+              </li>
             </ul>
           </div>
         </section>
         <div class="container">
           <ul class="category-flex">
-            <li>
-              <div class="portfolio-thumb">
+            <li class="portfolio">
+              <div class="portfolio__thumb">
                 <img src="./images/portfolio/laptop.jpg" alt="Laptop image" width="370px" />
-                <div class="portfolio-overlay">
-                  <p class="text">
+                <div class="portfolio__overlay">
+                  <p class="portfolio__text">
                     Technoduck is a state-of-the-art coronavirus distribution platform. Companies
                     use this platform for digital espionage and attacks on competitors' secure
                     servers.
                   </p>
                 </div>
               </div>
-              <div class="filter-item">
-                <p>Technoduck</p>
-                <em>Web-site</em>
+              <div class="portfolio__item">
+                <p class="portfolio__title">Technoduck</p>
+                <em class="portfolio__service">Web-site</em>
               </div>
             </li>
-            <li>
-              <div class="portfolio-thumb">
+            <li class="portfolio">
+              <div class="portfolio__thumb">
                 <img
                   src="./images/portfolio/basketball.jpg"
                   alt="Poster New Orlean vs Golden Star"
                   width="370px"
                 />
-                <div class="portfolio-overlay">
-                  <p class="text">
+                <div class="portfolio__overlay">
+                  <p class="portfolio__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste esse delectus,
                     obcaecati debitis explicabo cum corrupti, a laboriosam unde officiis voluptate
                     aliquam suscipit eveniet aliquid natus velit accusamus sequi quo.
                   </p>
                 </div>
               </div>
-              <div class="filter-item">
-                <p>Poster New Orlean vs Golden Star</p>
-                <em>Design</em>
+              <div class="portfolio__item">
+                <p class="portfolio__title">Poster New Orlean vs Golden Star</p>
+                <em class="portfolio__service">Design</em>
               </div>
             </li>
-            <li>
-              <div class="portfolio-thumb">
+            <li class="portfolio">
+              <div class="portfolio__thumb">
                 <img
                   src="./images/portfolio/seafood.jpg"
                   alt="Seafood Restaurant Logo"
                   width="370px"
                 />
-                <div class="portfolio-overlay">
-                  <p class="text">
+                <div class="portfolio__overlay">
+                  <p class="portfolio__text">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis voluptas quas
                     aperiam facere aut laboriosam unde sit fuga repellat, incidunt hic, corrupti eum
                     perspiciatis sapiente accusantium deleniti repellendus quia modi?
                   </p>
                 </div>
               </div>
-              <div class="filter-item">
-                <p>Seafood Restaurant</p>
-                <em>Apps</em>
+              <div class="portfolio__item">
+                <p class="portfolio__title">Seafood Restaurant</p>
+                <em class="portfolio__service">Apps</em>
               </div>
             </li>
-            <li>
-              <div class="portfolio-thumb">
+            <li class="portfolio">
+              <div class="portfolio__thumb">
                 <img src="./images/portfolio/headphones.jpg" alt="Headphone image" width="370px" />
-                <div class="portfolio-overlay">
-                  <p class="text">
+                <div class="portfolio__overlay">
+                  <p class="portfolio__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste esse delectus,
                     obcaecati debitis explicabo cum corrupti, a laboriosam unde officiis voluptate
                     aliquam suscipit eveniet aliquid natus velit accusamus sequi quo.
                   </p>
                 </div>
               </div>
-              <div class="filter-item">
-                <p>Project Prime</p>
-                <em>Marketing</em>
+              <div class="portfolio__item">
+                <p class="portfolio__title">Project Prime</p>
+                <em class="portfolio__service">Marketing</em>
               </div>
             </li>
-            <li>
-              <div class="portfolio-thumb">
+            <li class="portfolio">
+              <div class="portfolio__thumb">
                 <img src="./images/portfolio/box.jpg" alt="Two Boxes image" width="370px" />
-                <div class="portfolio-overlay">
-                  <p class="text">
+                <div class="portfolio__overlay">
+                  <p class="portfolio__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste esse delectus,
                     obcaecati debitis explicabo cum corrupti, a laboriosam unde officiis voluptate
                     aliquam suscipit eveniet aliquid natus velit accusamus sequi quo.
                   </p>
                 </div>
               </div>
-              <div class="filter-item">
-                <p>Project Boxes</p>
-                <em>Apps</em>
+              <div class="portfolio__item">
+                <p class="portfolio__title">Project Boxes</p>
+                <em class="portfolio__service">Apps</em>
               </div>
             </li>
-            <li>
-              <div class="portfolio-thumb">
+            <li class="portfolio">
+              <div class="portfolio__thumb">
                 <img src="./images/portfolio/computer.jpg" alt="Computer image" width="370px" />
-                <div class="portfolio-overlay">
-                  <p class="text">
+                <div class="portfolio__overlay">
+                  <p class="portfolio__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste esse delectus,
                     obcaecati debitis explicabo cum corrupti, a laboriosam unde officiis voluptate
                     aliquam suscipit eveniet aliquid natus velit accusamus sequi quo.
                   </p>
                 </div>
               </div>
-              <div class="filter-item">
-                <p>Inspiration has no Borders</p>
-                <em>Web-site</em>
+              <div class="portfolio__item">
+                <p class="portfolio__title">Inspiration has no Borders</p>
+                <em class="portfolio__service">Web-site</em>
               </div>
             </li>
-            <li class="last-li">
-              <div class="portfolio-thumb">
+            <li class="portfolio">
+              <div class="portfolio__thumb">
                 <img src="./images/portfolio/book.jpg" alt="a Book image" width="370px" />
-                <div class="portfolio-overlay">
-                  <p class="text">
+                <div class="portfolio__overlay">
+                  <p class="portfolio__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste esse delectus,
                     obcaecati debitis explicabo cum corrupti, a laboriosam unde officiis voluptate
                     aliquam suscipit eveniet aliquid natus velit accusamus sequi quo.
                   </p>
                 </div>
               </div>
-              <div class="filter-item">
-                <p>Limited Edition</p>
-                <em>Design</em>
+              <div class="portfolio__item">
+                <p class="portfolio__title">Limited Edition</p>
+                <em class="portfolio__service">Design</em>
               </div>
             </li>
-            <li>
-              <div class="portfolio-thumb">
+            <li class="portfolio">
+              <div class="portfolio__thumb">
                 <img src="./images/portfolio/letters.jpg" alt="Label image" width="370px" />
-                <div class="portfolio-overlay">
-                  <p class="text">
+                <div class="portfolio__overlay">
+                  <p class="portfolio__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste esse delectus,
                     obcaecati debitis explicabo cum corrupti, a laboriosam unde officiis voluptate
                     aliquam suscipit eveniet aliquid natus velit accusamus sequi quo.
                   </p>
                 </div>
               </div>
-              <div class="filter-item">
-                <p>Project LAB</p>
-                <em>Marketing</em>
+              <div class="portfolio__item">
+                <p class="portfolio__title">Project LAB</p>
+                <em class="portfolio__service">Marketing</em>
               </div>
             </li>
-            <li>
-              <div class="portfolio-thumb">
+            <li class="portfolio">
+              <div class="portfolio__thumb">
                 <img src="./images/portfolio/tablet.jpg" alt="Table with keyboard image" />
-                <div class="portfolio-overlay">
-                  <p class="text">
+                <div class="portfolio__overlay">
+                  <p class="portfolio__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste esse delectus,
                     obcaecati debitis explicabo cum corrupti, a laboriosam unde officiis voluptate
                     aliquam suscipit eveniet aliquid natus velit accusamus sequi quo.
                   </p>
                 </div>
               </div>
-              <div class="filter-item">
-                <p>Growing Business</p>
-                <em>Apps</em>
+              <div class="portfolio__item">
+                <p class="portfolio__title">Growing Business</p>
+                <em class="portfolio__service">Apps</em>
               </div>
             </li>
           </ul>

@@ -14,31 +14,6 @@
   padding: 0;
 }
 
-.last {
-  margin-right: 0;
-}
-
-.filter-section-button button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.filter-section-button button:hover,
-.filter-section-button button:focus {
-  background: #2196f3;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  color: #fff;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .category-flex {
   display: flex;
   justify-content: center;
@@ -47,18 +22,38 @@
   margin: 0;
   gap: 27px;
 }
-.category-section li {
+
+.portfolio__item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.category__list {
   background: #ffffff;
 }
-.category-section li p {
+
+.portfolio {
+  border: 1px solid #eeeeee;
+
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+  }
+}
+
+.portfolio__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
   margin-left: 24px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
 }
-.category-section li em {
+.portfolio__service {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -67,26 +62,13 @@
   margin-left: 24px;
 }
 
-.category-flex li {
-  border: 1px solid #eeeeee;
-}
-
-.category-flex li:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
-}
-
-.category-flex li:hover .portfolio-overlay {
-  top: 0;
-}
-
-.portfolio-thumb {
+.portfolio__thumb {
   position: relative;
   overflow: hidden;
   padding: 0;
 }
-.portfolio-overlay {
+
+.portfolio__overlay {
   padding: 0;
   position: absolute;
   top: 0;
@@ -104,7 +86,11 @@
   background: rgba(33, 150, 243, 0.9);
 }
 
-.portfolio-thumb .text {
+.portfolio:hover .portfolio__overlay {
+  top: 0;
+}
+
+.portfolio__thumb .portfolio__text {
   margin-top: 63px;
   margin-left: 24px;
   margin-right: 24px;
